@@ -1,0 +1,9 @@
+.search-box {
+  border: none;
+  inline-size: 150px;
+  line-height: 30px;
+  margin-block-end: 30px;
+  outline-color: dodgerblue;
+  padding: 10px;
+  -webkit-appearance: none;
+}
