@@ -1,12 +1,13 @@
 import {Component} from 'react';
+import './card.styles.css'
 
-class CardItem extends Component {
+class Card extends Component {
 
   render() {
     const { name, email, id } = this.props.monster;
-
+console.log(id)
     return (
-    <li key={ id } className="card-container">
+    <li className="card-container">
       <img src={ `https://robohash.org/${ id }?set=set2` }
            alt={ `monster ${ name }` }/>
       <h2>{ name }</h2>
@@ -16,4 +17,4 @@ class CardItem extends Component {
   }
 }
 
-export default CardItem
+export default Card
