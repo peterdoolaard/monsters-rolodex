@@ -1,20 +1,17 @@
-import {Component} from 'react';
-import './card.styles.css'
+import './card.styles.css';
 
-class Card extends Component {
+const Card = ({ monster }) => {
 
-  render() {
-    const { name, email, id } = this.props.monster;
-console.log(id)
-    return (
+  const { name, email, id } = monster;
+
+  return (
     <li className="card-container">
       <img src={ `https://robohash.org/${ id }?set=set2` }
            alt={ `monster ${ name }` }/>
       <h2>{ name }</h2>
       <p>{ email }</p>
     </li>
-    )
-  }
-}
+  );
+};
 
-export default Card
+export default Card;
